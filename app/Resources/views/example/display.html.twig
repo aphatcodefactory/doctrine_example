@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<h2>Example database application!</h2>
+	<table class="table">
+	<tr>
+	<th>Name</th>
+	<th>Address</th>
+	</tr>
+	{% for x in data %}
+	<tr>
+	<td>{{ x.Name }}</td>
+	<td>{{ x.Address }}</td>
+	</tr>
+	{% endfor %}
+	</table>
+
+{% endblock %}
